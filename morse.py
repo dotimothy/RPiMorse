@@ -386,7 +386,7 @@ def prompt():
 # Main Function, Welcomes You and Calls Prompt
 def main():
     print("Welcome to RPiMorse Console Version! It will convert your input into Morse Code and print to console.")
-    print("Note: Only Letters and Numbers are Accepted for now. Punctuation will come in the next update.")
+    print("Update: Punctuation has been added according to morse.png")
     prompt()
 
 main()
