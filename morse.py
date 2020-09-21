@@ -3,16 +3,13 @@
 
 import time
 
-#Functions for Dots, Dashes, and Slashes
+#Functions for Dots, Dashes
 def dot():
     print(".", end="")
     
 def dash():
     print("-", end="")
-
-def slash():
-    print("/", end="")
-
+    
 #Functions for Printing the Letters
 def a():
     dot()
@@ -193,18 +190,81 @@ def nine():
 def zero():
     for i in range(0,5):
         dash()
+    
+#Function to Print Punctuation
+def period():
+    for i in range(0,3):
+        dot()
+        dash()
 
+def comma():
+    dash()
+    dash()
+    dot()
+    dot()
+    dash()
+    dash()
+
+def question():
+    dot()
+    dot()
+    dash()
+    dash()
+    dash()
+
+def apostrophe():
+    dot()
+    for i in range(0,4):
+        dash()
+    dot()
+
+def slash():
+    dash()
+    dot()
+    dot()
+    dash()
+    dot()
+
+def colon():
+    for i in range(0,3):
+        dash()
+    for j in range(0,3):
+        dot()
+
+def semicolon():
+    for i in range(0,3):
+        dash()
+        dot()
+
+def plus():
+    for i in range(0,2):
+        dot()
+        dash()
+    dot()
+
+def minus():
+    dash()
+    for i in range(0,4):
+        dot()
+    dash()
+
+def equal():
+    dash()
+    for i in range(0,3):
+        dot()
+    dash()
+    
 #Function to print the space
 def space():
-    slash()
+    print("/", end="")
 
 
 
 #Function to traverese through input and printing to Morse Code.
 def printMorse(input):
     #For Checking for Invalid Characters
-    for character in input:
-        nonMorse = character != "a" and character != "b" and character != "c" and character != "d" and character != "e" and character != "f" and character != "g" and character != "h" and character != "i" and character != "j" and character != "l" and character != "m" and character != "n" and character != "o" and character != "p" and character != "q" and character != "r" and character != "s" and character != "t" and character != "u" and character != "v" and character != "w" and character != "x" and character != "y" and character != "z" and character != "1" and character != "2" and character != "3" and character != "4" and character != "5" and character != "6" and character != "7" and character != "8" and character != "9" and character != "0" and character != ""
+    for character in input.lower():
+        nonMorse = character != "a" and character != "b" and character != "c" and character != "d" and character != "e" and character != "f" and character != "g" and character != "h" and character != "i" and character != "j" and character != "l" and character != "m" and character != "n" and character != "o" and character != "p" and character != "q" and character != "r" and character != "s" and character != "t" and character != "u" and character != "v" and character != "w" and character != "x" and character != "y" and character != "z" and character != "1" and character != "2" and character != "3" and character != "4" and character != "5" and character != "6" and character != "7" and character != "8" and character != "9" and character != "0" and character != "." and character != "," and character != "?" and character != "'" and character !="/" and character != ":" and character != ";" and character != "+" and character != "-" and character != "=" and character != " " and character != ""
         if(nonMorse):
             print("The Character \'" + character + "\' in Input \"" + input + "\" Doesn't Exist in Morse Code. Please Try A Different Input.")
             prompt()
@@ -283,6 +343,26 @@ def printMorse(input):
             nine()
         elif(characters == "0"):
             zero()
+        elif(characters == "."):
+            period()
+        elif(characters == ","):
+            comma()
+        elif(characters == "?"):
+            question()
+        elif(characters == "'"):
+            apostrophe()
+        elif(characters == "/"):
+            slash()
+        elif(characters == ":"):
+            colon()
+        elif(characters == ";"):
+            semicolon()
+        elif(characters == "+"):
+            plus()
+        elif(characters == "-"):
+            minus()
+        elif(characters == "="):
+            equal()
         elif(characters == " "):
             space()
         print(" ", end="")
@@ -308,8 +388,6 @@ def main():
     print("Welcome to RPiMorse Console Version! It will convert your input into Morse Code and print to console.")
     print("Note: Only Letters and Numbers are Accepted for now. Punctuation will come in the next update.")
     prompt()
-
-        
 
 main()
 
