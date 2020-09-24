@@ -3,4 +3,4 @@ try:
 except ModuleNotFoundError: 
 	print("You don't have GPIO Pins, so you can't run this program! Redirecting to console version...")
 
-GPIO.setwarning(False)
+GPIO.setwarnings(False)
