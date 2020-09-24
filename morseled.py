@@ -1,2 +1,7 @@
-#Intended to be only with the RPi, read disclaimer.
-print("DISCLAIMER: Run morseled.py ONLY IF you designed a similar circuit with an LED, resistor, breadboard, and a Raspberry Pi as described in README.md")
+try:
+	import RPi.GPIO as GPIO
+except ModuleNotFoundError: 
+	print("You don't have GPIO Pins, so you can't run this program!")
+	exit()
+
+GPIO.setwarning(False)
