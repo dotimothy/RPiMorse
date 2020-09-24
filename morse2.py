@@ -464,7 +464,7 @@ def prompt():
     printMorse(feed)
     
 # Main Function, Welcomes You and Calls Prompt
-def mainTwo():
+def main():
     print("Welcome to RPiMorse for Python2! It will convert your input into Morse Code and print to console.")
     print("Note: morse2.py cannot convert spanish characters. Please use the main program morse.py and Python3.")
     prompt()
