@@ -481,10 +481,7 @@ def prompt():
     print("\nYour Input is " + feed + ".\n")   
     print("Here it is in Morse Code!")
     printMorse(feed)
-
-
-
-
+    
 # Main Function, Welcomes You and Calls Prompt
 def main():
     print("Welcome to RPiMorse Console Version! It will convert your input into Morse Code and print to console.")
