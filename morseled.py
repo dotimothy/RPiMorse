@@ -1,7 +1,7 @@
 try:
 	import RPi.GPIO as GPIO
 except ModuleNotFoundError: 
-	print("You don't have GPIO Pins, so you can't run this program!")
-	exit()
+	print("You don't have GPIO Pins, so you can't run this program! Redirecting to console version...)
+	import morse
 
 GPIO.setwarning(False)
