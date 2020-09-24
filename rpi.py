@@ -1,6 +1,6 @@
 #author Timothy Do
-#RPiMorse: Flashes LED in Morse Code
-#Note: Only Works for RPis with GPIO pins. You will be redirected to console version if it doesn't work.
+#RPiMorse Pi Version for Python 3+: Flashes LED in Morse Code
+#Note: Only Works for RPis with GPIO pins and Python3+. You will be redirected to console version if it doesn't work.
 
 try:
 	import RPi.GPIO as GPIO
@@ -16,6 +16,9 @@ GPIO.setmode(GPIO.BOARD)
 led = 11
 GPIO.setup(led,GPIO.OUT)
 GPIO.output(led,False)
+
+def main():
+
 
 
 

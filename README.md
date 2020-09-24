@@ -7,6 +7,10 @@
  ## Or just run <code>morse.py</code> for guranteed console functionality (chooses version for you!).
 
  # Documentation for Pi Version (RPiMorse requires Python 2+):
+ <!--
  <h2>For testing purposes, if your python version is 3 or higher, please run the program <code>rpi3.py</code>. If your version is lower, run <code>rpi2.py</code>.</h2>
+ !-->
 
   ## Or just run <code>rpi.py</code> for guranteed console functionality (chooses version for you!).
+
+  ^ Only Python 3 Supported for now
