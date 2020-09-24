@@ -2,7 +2,7 @@ try:
 	import RPi.GPIO as GPIO
 	import time
 except ModuleNotFoundError: 
-	print("You don't have GPIO Pins, so you can't run this program! Redirecting to console version...")
+	print("You don't have GPIO Pins, so you can't run this program! Redirecting to console version...\n")
 	import morse
 
 #Board Setup
