@@ -1,5 +1,6 @@
 try:
 	import RPi.GPIO as GPIO
+	import time
 except ModuleNotFoundError: 
 	print("You don't have GPIO Pins, so you can't run this program! Redirecting to console version...")
 
@@ -11,9 +12,9 @@ led = 11
 GPIO.setup(led,GPIO.OUT)
 while True:
 	GPIO.output(led,True)
-	sleep(1)
+	time.sleep(1)
 	GPIO.output(led,False)
-	sleep(1)
+	timesleep(1)
 
 
 
