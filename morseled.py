@@ -12,7 +12,6 @@ GPIO.setmode(GPIO.BOARD)
 led = 11
 GPIO.setup(led,GPIO.OUT)
 GPIO.output(led,True)
-GPIO.cleanup()
 
 
 
