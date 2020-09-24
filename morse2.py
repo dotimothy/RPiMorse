@@ -1,6 +1,6 @@
 #author Timothy Do
 #RPiMorse Console: Prints Input in Morse Code to Console
-#Note: Only works with Python2, For Python3, run morse.py
+#Note: Only works with Python2 (No Spanish Characters), For Python3, run morse.py
 
 import time
 
@@ -323,22 +323,7 @@ def atSign():
     dot()
     dash()
     dot()
-
-#Function to print Spanish Characters
-def flipQ():
-    dot()
-    dot()
-    dash()
-    dot()
-    dash()
-
-def flipE():
-    dash()
-    dash()
-    for i in range(0,3):
-        dot()
-    dash()
-
+    
 #Function to print the space
 def space():
     print("/"),
@@ -347,7 +332,7 @@ def space():
 def printMorse(input):
     #For Checking for Invalid Characters
     for character in input.lower():
-        nonMorse = character != "a" and character != "b" and character != "c" and character != "d" and character != "e" and character != "f" and character != "g" and character != "h" and character != "i" and character != "j" and character != "k" and character != "l" and character != "m" and character != "n" and character != "o" and character != "p" and character != "q" and character != "r" and character != "s" and character != "t" and character != "u" and character != "v" and character != "w" and character != "x" and character != "y" and character != "z" and character != "1" and character != "2" and character != "3" and character != "4" and character != "5" and character != "6" and character != "7" and character != "8" and character != "9" and character != "0" and character != "." and character != "," and character != "?" and character != "'" and character != "!" and character !="/" and character != "(" and character != ")" and character != "&" and character != ":" and character != ";" and character != "=" and character != "+" and character != "-" and character != "_" and character != "\"" and character != "$" and character != "@" and character != "¿" and character != "¡"  and character != " " and character != ""
+        nonMorse = character != "a" and character != "b" and character != "c" and character != "d" and character != "e" and character != "f" and character != "g" and character != "h" and character != "i" and character != "j" and character != "k" and character != "l" and character != "m" and character != "n" and character != "o" and character != "p" and character != "q" and character != "r" and character != "s" and character != "t" and character != "u" and character != "v" and character != "w" and character != "x" and character != "y" and character != "z" and character != "1" and character != "2" and character != "3" and character != "4" and character != "5" and character != "6" and character != "7" and character != "8" and character != "9" and character != "0" and character != "." and character != "," and character != "?" and character != "'" and character != "!" and character !="/" and character != "(" and character != ")" and character != "&" and character != ":" and character != ";" and character != "=" and character != "+" and character != "-" and character != "_" and character != "\"" and character != "$" and character != "@" and character != " " and character != ""
         if(nonMorse):
             print("The Character \'" + character + "\' in Input \"" + input + "\" Doesn't Exist in Morse Code. Please Try A Different Input.")
             prompt()
@@ -462,10 +447,6 @@ def printMorse(input):
             dollarSign()
         elif(characters == "@"):
             atSign()
-        elif(characters == "¿"):
-            flipQ()
-        elif(characters == "¡"):
-            flipE()
         elif(characters == " "):
             space()
         print(" "),
@@ -485,7 +466,7 @@ def prompt():
 # Main Function, Welcomes You and Calls Prompt
 def main():
     print("Welcome to RPiMorse Console Version! It will convert your input into Morse Code and print to console.")
-    print("Update: Punctuation has been added according to morse.png")
+    print("Note: morse2.py cannot convert spanish characters. Please use the main program morse.py and Python3.")
     prompt()
 
 main()
