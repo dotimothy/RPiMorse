@@ -8,7 +8,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 #Set LED pin to pin 11
 led = 11
-GPIO.setup(led,GPIO.out)
+GPIO.setup(led,GPIO.OUT)
 while True:
 	GPIO.output(led,True)
 	sleep(1)
