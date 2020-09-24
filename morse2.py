@@ -6,10 +6,10 @@ import time
 
 #Functions for Dots, Dashes
 def dot():
-    print(".", end="")
+    print("."),
     
 def dash():
-    print("-", end="")
+    print("-"),
     
 #Functions for Printing the Letters
 def a():
@@ -257,7 +257,7 @@ def equal():
     
 #Function to print the space
 def space():
-    print("/", end="")
+    print("/"),
 
 
 
@@ -366,7 +366,7 @@ def printMorse(input):
             equal()
         elif(characters == " "):
             space()
-        print(" ", end="")
+        print(" "),
     print("\n\nThe output has been compiled.\n")
     exit()
 
