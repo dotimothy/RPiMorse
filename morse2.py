@@ -341,7 +341,7 @@ def flipE():
 
 #Function to print the space
 def space():
-    print("/", end="")
+    print("/"),
 
 #Function to traverese through input and printing to Morse Code.
 def printMorse(input):
