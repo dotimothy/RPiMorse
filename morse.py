@@ -1,4 +1,4 @@
 try: 
     import morse3
-except ImportError:
+except SyntaxError:
     import morse2
