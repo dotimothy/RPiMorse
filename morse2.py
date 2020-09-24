@@ -1,6 +1,6 @@
 #author Timothy Do
 #RPiMorse Console: Prints Input in Morse Code to Console
-#Note: Only works with Python3, A Version for Python2 will come out soon.
+#Note: Only works with Python2, For Python3, run morse.py
 
 import time
 
