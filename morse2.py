@@ -372,8 +372,7 @@ def printMorse(input):
 
 #User Prompt
 def prompt():
-    print()
-    feed = input("Type What You Want to Convert and Press Enter: ")
+    feed = input("\nType What You Want to Convert and Press Enter: ")
     if(feed == ""):
         print("You Didn't Input Anything. Please Try Again.")
         prompt()
