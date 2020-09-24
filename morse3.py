@@ -483,7 +483,7 @@ def prompt():
     printMorse(feed)
     
 # Main Function, Welcomes You and Calls Prompt
-def main():
+def mainThree():
     print("Welcome to RPiMorse Console for Python3! It will convert your input into Morse Code and print to console.")
     print("Update: Punctuation has been added according to morse.png")
     prompt()
