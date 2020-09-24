@@ -4,4 +4,4 @@
  # Note for Console Versions (RPiMorse Console requires Python 2+): 
  <h2>For testing purposes, if your python version is 3 or higher, please run the program <code>morse3.py</code>. If your version is lower, run <code>morse2.py</code>.</h2>
  
- ##  Run <code>morse.py</code> for guranteed console functionality (chooses version for you!).
+ ## Or just run <code>morse.py</code> for guranteed console functionality (chooses version for you!).
