@@ -211,7 +211,8 @@ def question():
     dot()
     dash()
     dash()
-    dash()
+    dot()
+    dot()
 
 def apostrophe():
     dot()
@@ -219,12 +220,43 @@ def apostrophe():
         dash()
     dot()
 
+
+def exclamation():
+    for i in range(0,2):
+        dash()
+        dot()
+    dash()
+    dash()
+
 def slash():
     dash()
     dot()
     dot()
     dash()
     dot()
+
+
+def leftBracket():
+    dash()
+    dot()
+    dash()
+    dash()
+    dot()
+
+def rightBracket():
+    dash()
+    dot()
+    dash()
+    dash()
+    dot()
+    dash()
+
+
+def ampersand():
+    dot()
+    dash()
+    for i in range(0,3):
+        dot()
 
 def colon():
     for i in range(0,3):
@@ -236,6 +268,13 @@ def semicolon():
     for i in range(0,3):
         dash()
         dot()
+        
+#Fucntions to print arithmetic signs
+def equal():
+    dash()
+    for i in range(0,3):
+        dot()
+    dash()
 
 def plus():
     for i in range(0,2):
@@ -249,23 +288,66 @@ def minus():
         dot()
     dash()
 
-def equal():
+#Functions to print some shift characters
+def underscore():
+    dot()
+    dot()
+    dash()
+    dash()
+    dot()
+    dash()
+
+
+def doubleQuote():
+    dot()
+    dash()
+    dot()
+    dot()
+    dash()
+    dot()
+
+
+def dollarSign():
+    for i in range(0,3):
+        dot()
+    dash()
+    dot()
+    dot()
+    dash()
+
+
+def atSign():
+    dot()
+    dash()
+    dash()
+    dot()
+    dash()
+    dot()
+
+#Function to print Spanish Characters
+def flipQ():
+    dot()
+    dot()
+    dash()
+    dot()
+    dash()
+
+def flipE():
+    dash()
     dash()
     for i in range(0,3):
         dot()
     dash()
-    
+
 #Function to print the space
 def space():
-    print("/"),
-
-
+    print("/", end="")
 
 #Function to traverese through input and printing to Morse Code.
 def printMorse(input):
     #For Checking for Invalid Characters
     for character in input.lower():
-        nonMorse = character != "a" and character != "b" and character != "c" and character != "d" and character != "e" and character != "f" and character != "g" and character != "h" and character != "i" and character != "j" and character != "k" and character != "l" and character != "m" and character != "n" and character != "o" and character != "p" and character != "q" and character != "r" and character != "s" and character != "t" and character != "u" and character != "v" and character != "w" and character != "x" and character != "y" and character != "z" and character != "1" and character != "2" and character != "3" and character != "4" and character != "5" and character != "6" and character != "7" and character != "8" and character != "9" and character != "0" and character != "." and character != "," and character != "?" and character != "'" and character !="/" and character != ":" and character != ";" and character != "+" and character != "-" and character != "=" and character != " " and character != ""
+        nonMorse = character != "a" and character != "b" and character != "c" and character != "d" and character != "e" and character != "f" and character != "g" and character != "h" and character != "i" and character != "j" and character != "k" and character != "l" and character != "m" and character != "n" and character != "o" and character != "p" and character != "q" and character != "r" and character != "s" and character != "t" and character != "u" and character != "v" and character != "w" and character != "x" and character != "y" and character != "z" and character != "1" and character != "2" and character != "3" and character != "4" and character != "5" and character != "6" and character != "7" and character != "8" and character != "9" and character != "0" and character != "." and character != "," and character != "?" and character != "'" and character != "!" and character !="/" and character != "(" and character != ")" and character != "&" and character != ":" and character != ";" and character != "=" and character != "+" and character != "-" and character != "_" and character != "\"" and character != "$" and character != "@" and character != "¿" and character != "¡"  and character != " " and character != ""
         if(nonMorse):
             print("The Character \'" + character + "\' in Input \"" + input + "\" Doesn't Exist in Morse Code. Please Try A Different Input.")
             prompt()
@@ -352,18 +434,38 @@ def printMorse(input):
             question()
         elif(characters == "'"):
             apostrophe()
+        elif(characters == "!"):
+            exclamation()
+        elif(characters == "("):
+            leftBracket()
+        elif(characters == ")"):
+            rightBracket()
+        elif(characters == "&"):
+            ampersand()
         elif(characters == "/"):
             slash()
         elif(characters == ":"):
             colon()
         elif(characters == ";"):
             semicolon()
+        elif(characters == "="):
+            equal()
         elif(characters == "+"):
             plus()
         elif(characters == "-"):
             minus()
-        elif(characters == "="):
-            equal()
+        elif(characters == "_"):
+            underscore()
+        elif(characters == "\""):
+            doubleQuote()
+        elif(characters == "$"):
+            dollarSign()
+        elif(characters == "@"):
+            atSign()
+        elif(characters == "¿"):
+            flipQ()
+        elif(characters == "¡"):
+            flipE()
         elif(characters == " "):
             space()
         print(" "),
