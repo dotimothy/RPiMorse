@@ -18,6 +18,10 @@ A python program to convert standard input to morse code, printing to console (a
  <br>
  3+ Jumper Wires (More for Stablity)
  
+ ## Setup
+ RPiMorse uses the following translations to convert regular input to Morse Code:
+ <img src="morse.png"
+ 
   # Documentation for Pi Version:
  
  For testing purposes, if your python version is 3 or higher, please run the program <code>rpi3.py</code>. If your version is lower, run <code>rpi2.py</code>.
