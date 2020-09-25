@@ -2,8 +2,6 @@
 #RPiMorse Console: Prints Input in Morse Code to Console
 #Note: Only works with Python2 (No Spanish Characters), For Python3, run morse.py
 
-import time
-
 #Functions for Dots, Dashes
 def dot():
     print("."),
