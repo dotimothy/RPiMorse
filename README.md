@@ -3,6 +3,7 @@ A python program to convert standard input to morse code, printing to console (a
  
  ## Global Requirments:
  Python Version 2 or higher
+ <br>
  Raspberry Pi with GPIO Pins (for LED version)
  
   # Documentation for Pi Version:
