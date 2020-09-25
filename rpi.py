@@ -501,6 +501,7 @@ def printMorse(input):
         elif(characters != " "):
         	pause(7)
     print("\n\nThe output has been compiled.\n")
+    GPIO.cleanup()
     exit()
 
 def prompt():
