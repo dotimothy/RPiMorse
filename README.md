@@ -4,13 +4,13 @@ A python program to convert standard input to morse code, printing to console (a
  ## Global Requirments:
  Python Version 2 or higher
  
-  # Documentation for Pi Version (RPiMorse requires Python 2+):
+  # Documentation for Pi Version:
  
  For testing purposes, if your python version is 3 or higher, please run the program <code>rpi3.py</code>. If your version is lower, run <code>rpi2.py</code>.
  
   ## Or just run <code>rpi.py</code> for guranteed console functionality (chooses version for you, even with no Pi!).
  
- # Documentation for Console Versions (RPiMorse Console requires Python 2+): 
+ # Documentation for Console Versions: 
  For testing purposes, if your python version is 3 or higher, please run the program <code>morse3.py</code>. If your version is lower, run <code>morse2.py</code>.
  
  ## Or just run <code>morse.py</code> for guranteed console functionality (chooses version for you!).
