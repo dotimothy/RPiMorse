@@ -496,9 +496,9 @@ def printMorse(input):
         elif(characters == " "):
             space()
         print(" ", end="")
-        if(characters == " "):
+        if(characters != " "):
         	pause(3)
-        elif(characters != " "):
+        elif(characters == " "):
         	pause(7)
     print("\n\nThe output has been compiled.\n")
     GPIO.cleanup()
@@ -509,8 +509,8 @@ def prompt():
     if(feed == ""):
         print("You Didn't Input Anything. Please Try Again.")
         prompt()
-    print("\nYour Input is " + feed + ".\n")   
-    print("Here it is in Morse Code!")
+    print("\nYour Input is " + feed + ". See the Led Flash in Morse Code!\n")   
+    print("Console Output:")
     printMorse(feed)
 
 def main():
