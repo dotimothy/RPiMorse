@@ -8,9 +8,13 @@ A python program to convert standard input to morse code, printing to console (a
  <br>
  ### For Pi Version:
  Raspberry Pi with GPIO Pins 
- An LED 
+ <br>
+ An LED
+ <br>
  A 100 Ω Resistor
+ <br>
  A Breadboard
+ <br>
  3+ Jumper Wires (More for Stablity)
  
   # Documentation for Pi Version:
