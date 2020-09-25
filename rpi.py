@@ -4,10 +4,11 @@
 
 try:
 	import RPi.GPIO as GPIO
-	import time
 except ModuleNotFoundError: 
 	print("You don't have GPIO Pins, so you can't run this program! Redirecting to console version...\n")
 	import morse
+
+import time
 
 #Board Setup
 GPIO.setwarnings(False)
@@ -498,6 +499,8 @@ def prompt():
 def main():
 	print("Welcome to RPiMorse for Python3! It will convert your input into Morse Code and flashes to an LED Circuit.")
  	prompt()
+
+ main()
 
 
 
