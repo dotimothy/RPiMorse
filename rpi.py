@@ -500,7 +500,6 @@ def main():
 	print("Welcome to RPiMorse for Python3! It will convert your input into Morse Code and flashes to an LED Circuit.")
 	prompt()
 
- main()
 
 
 
