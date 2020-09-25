@@ -16,6 +16,6 @@ A python program to convert standard input to morse code, printing to console (a
  For testing purposes, if your python version is 3 or higher, please run the program <code>morse3.py</code>. If your version is lower, run <code>morse2.py</code>.
  
  ## Or just run <code>morse.py</code> for guranteed console functionality (chooses version for you!).
-
+<img src="console.png></img>
 
 
