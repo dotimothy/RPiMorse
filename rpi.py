@@ -20,7 +20,7 @@ GPIO.output(led,False)
 
 #Function to represent a time unit
 def pause(units):
-	time.sleep(0.1 * units)
+	time.sleep(0.05 * units)
 
 #Functions for Dots, Dashes
 def dot():
