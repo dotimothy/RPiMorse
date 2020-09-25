@@ -18,13 +18,25 @@ led = 11
 GPIO.setup(led,GPIO.OUT)
 GPIO.output(led,False)
 
+#Function to represent a time unit
+def pause(units)
+	time.sleep(0.5 * units)
 
 #Functions for Dots, Dashes
 def dot():
     print(".", end="")
+    GPIO.output(led,True)
+    pause(1)
+    GPIO.output(led,False)
+    pause(1)
+
     
 def dash():
     print("-", end="")
+    GPIO.output(led,True)
+    pause(3)
+    GPIO.output(led,False)
+    pause(1)
     
 #Functions for Printing the Letters
 def a():
@@ -484,6 +496,10 @@ def printMorse(input):
         elif(characters == " "):
             space()
         print(" ", end="")
+        if(characters == " "):
+        	pause(3)
+        elif(characters != " "):
+        	pause(7)
     print("\n\nThe output has been compiled.\n")
     exit()
 
