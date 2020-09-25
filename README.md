@@ -1,10 +1,15 @@
 # [RPiMorse](https://github.com/dotimothy/RPiMorse)
-A python program to convert standard input to morse code, printing to console (all) or flashing an LED via GPIO Pins (Pin 11). Run <code>morse.py</code> to get a universal Morse Code translator on console, run <code>rpi.py</code> if you have a Raspberry Pi with an LED circuit.
+A python program to convert standard input to morse code, printing to console (all) or flashing an LED via GPIO Pins (Pin 11). Run <code>morse.py</code> to get a universal Morse Code translator on console for any device with Python,or run <code>rpi.py</code> if you have a Raspberry Pi with an LED circuit for more real world translations!
  
  ## Global Requirments:
  Python Version 2 or higher
  <br>
- Raspberry Pi with GPIO Pins (for LED version)
+ ### For Pi Version:
+ Raspberry Pi with GPIO Pins 
+ An LED 
+ A 100 Ω Resistor
+ A Breadboard
+ 3+ Jumper Wires (More for Stablity)
  
   # Documentation for Pi Version:
  
