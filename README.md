@@ -13,4 +13,3 @@
 
   ## Or just run <code>rpi.py</code> for guranteed console functionality (chooses version for you!).
 
-  ^ Only Python 3 Supported for now
