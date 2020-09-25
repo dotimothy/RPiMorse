@@ -6,16 +6,17 @@ except ModuleNotFoundError:
 	
 import time
 
+led = 11
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(11,GPIO.OUT)
+GPIO.setup(led,GPIO.OUT)
 
 
 while True:
-	GPIO.output(11,True)
 	print("LED On")
+	GPIO.output(11,True)
 	time.sleep(.5)
-	GPIO.output(11, False)
 	print("LED Off")
+	GPIO.output(11, False)
 	time.sleep(.5)
 GPIO.cleanup()
