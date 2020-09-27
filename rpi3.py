@@ -13,8 +13,9 @@ import time
 #Board Setup
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
-#Set LED pin to pin 11
-led = 11
+#Set LED pin to indicated pin 
+led = int(input("Please indicate the GPIO Pin You Will Be Using: "))
+print("\nYou have selected pin " + str(led) + " for output.\n")
 GPIO.setup(led,GPIO.OUT)
 GPIO.output(led,False)
 
