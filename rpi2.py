@@ -25,7 +25,7 @@ def pause(units):
 
 #Functions for Dots, Dashes
 def dot():
-    print("."),
+    print("\b."),
     GPIO.output(led,True)
     pause(1)
     GPIO.output(led,False)
@@ -33,7 +33,7 @@ def dot():
 
     
 def dash():
-    print("-"),
+    print("\b-"),
     GPIO.output(led,True)
     pause(3)
     GPIO.output(led,False)

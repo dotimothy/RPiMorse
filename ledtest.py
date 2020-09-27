@@ -6,17 +6,21 @@ except ModuleNotFoundError:
 	
 import time
 
-led = 11
+led = input("Welcome!\nPlease specify the pin you have connected to via \"+\" terminal: ")
+print("\nYou have selected pin " + str(led) + " to setup.\n")
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(led,GPIO.OUT)
 
+cycle = input("Please specify duration of the led cycle (in seconds): ")
+print("\nYour LED Cycle is " + str(cycle) + " second(s)\n")
+time.sleep(1)
 
 while True:
 	print("LED On")
-	GPIO.output(11,True)
-	time.sleep(1)
+	GPIO.output(led,True)
+	time.sleep(cycle)
 	print("LED Off")
-	GPIO.output(11, False)
-	time.sleep(1)
+	GPIO.output(led, False)
+	time.sleep(cycle)
 GPIO.cleanup()

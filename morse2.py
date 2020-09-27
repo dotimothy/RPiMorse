@@ -4,10 +4,10 @@
 
 #Functions for Dots, Dashes
 def dot():
-    print("."),
+    print("\b."),
     
 def dash():
-    print("-"),
+    print("\b-"),
     
 #Functions for Printing the Letters
 def a():
