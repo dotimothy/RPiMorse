@@ -15,11 +15,9 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 #Set LED pin to indicated pin 
 led = input("Please indicate the GPIO Pin You Will Be Using: ")
-print(type(led))
-pLed = led
-print("\nYou have selected pin " + pLed + " for output.\n")
-GPIO.setup(led,GPIO.OUT)
-GPIO.output(led,False)
+print("\nYou have selected pin " + led + " for output.\n")
+GPIO.setup(int(led),GPIO.OUT)
+GPIO.output(int(led),False)
 
 #Function to represent a time unit
 def pause(units):
