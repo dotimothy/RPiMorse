@@ -23,7 +23,8 @@ A python program to convert standard input to morse code, printing to console (a
  3+ Jumper Wires (More for Stablity)
  
  ## Setup
- RPiMorse uses the following <a href="https://dotimothy.github.io/translations">translations</a> to convert regular input to Morse Code:
+ RPiMorse uses the following <a href="https://dotimothy.github.io/translations">translations</a> to convert regular input to Morse Code.
+ <br>
  <br>
  For the LED Version, construct the following circuit: 
  <img src="docs/circuit.jpg" width="797" height="960">
