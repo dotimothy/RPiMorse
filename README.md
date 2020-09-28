@@ -28,7 +28,7 @@ A python program to convert standard input to morse code, printing to console (a
  For the LED Version, construct the following circuit: 
  <img src="docs/circuit.jpg" width="660" height="720">
  
- After constructed, run <code>rpi.py</code> and input <code>11</code> for GPIO pin to get it running!
+ After assembling the circuit, run <code>rpi.py</code> and input <code>11</code> for GPIO pin to get it running!
  
   # Documentation for Pi Version:
  
