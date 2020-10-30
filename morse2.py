@@ -466,6 +466,5 @@ def main():
     print("Note: morse2.py cannot convert spanish characters. Please use the main program morse.py and Python3.")
     prompt()
     exit = raw_input("")
-    exit()
     
 main()
