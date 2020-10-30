@@ -467,8 +467,7 @@ def printMorse(input):
         elif(characters == " "):
             space()
         print(" ", end="")
-    print("\n\nThe output has been compiled.\n")
-    exit()
+    print("\n\nThe output has been compiled.")
 
 #User Prompt
 def prompt():
@@ -485,6 +484,8 @@ def main():
     print("Welcome to RPiMorse Console for Python3! It will convert your input into Morse Code and print to console.")
     print("Update: Punctuation has been added according to morse.png")
     prompt()
+    exit = input("")
+    exit()
 
 main()
 
