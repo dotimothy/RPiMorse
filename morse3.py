@@ -485,8 +485,7 @@ def main():
     print("Update: Punctuation has been added according to morse.png")
     prompt()
     exit = input("")
-    exit()
-
+    
 main()
 
 
