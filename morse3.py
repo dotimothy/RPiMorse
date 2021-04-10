@@ -2,16 +2,24 @@
 #RPiMorse Console: Prints Input in Morse Code to Console
 #Note: Only works with Python3, For Python2, run morse2.py
 
+from time import sleep
+import sys
+
 #Functions for Dots, Dashes
 def dot():
-    print(".", end="")
+    print(".\a", end="")
+    sleep(0.1)
+    sys.stdout.flush()
     
 def dash():
-    print("-", end="")
+    print("-\a\a\a", end="")
+    sleep(0.3)
+    sys.stdout.flush()
     
 #Functions for Printing the Letters
 def a():
     dot()
+    time.sleep(1)
     dash()
 
 def b():
