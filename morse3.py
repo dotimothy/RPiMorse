@@ -19,7 +19,6 @@ def dash():
 #Functions for Printing the Letters
 def a():
     dot()
-    time.sleep(1)
     dash()
 
 def b():
